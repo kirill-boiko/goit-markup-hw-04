@@ -163,7 +163,7 @@ p {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero/hero.png");
+    url("../images/hero/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -238,10 +238,6 @@ p {
   margin-bottom: 30px;
 }
 
-.feature-icon {
-  width: 70px;
-  height: 70px;
-}
 /* about */
 
 .about {
@@ -297,21 +293,22 @@ p {
 }
 
 /* team social */
+.social-item {
+  width: 44px;
+  height: 44px;
+}
 
 .social-list {
   display: flex;
-}
-
-.social-item + .social-item {
-  margin-left: 10px;
+  justify-content: space-between;
 }
 
 .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   fill: var(--icon-color);
   background-color: var(--primary-white-color);
@@ -325,11 +322,6 @@ p {
 .social-link:focus,
 .social-link:hover {
   fill: var(--primary-white-color);
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
 }
 
 /* client */
@@ -393,15 +385,46 @@ p {
   margin-right: 70px;
 }
 
-.footer-social .social-link {
+/* footer social */
+
+.footer-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: baseline;
+  display: flex;
+}
+
+.footer-social {
+  width: 206px;
+  height: 80px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--primary-white-color);
 }
 
-.footer-social .text {
-  padding-top: 15px;
+.footer-social-text {
   margin-bottom: 20px;
-
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -409,8 +432,9 @@ p {
   color: var(--primary-white-color);
 }
 
-.footer-social .social-link:hover,
-.footer-social .social-link:focus {
+.footer-social-link:focus,
+.footer-social-link:hover {
+  fill: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
@@ -437,16 +461,12 @@ p {
   justify-content: flex-start;
 }
 
+.portfolio .button:focus,
 .portfolio .button:hover {
+  color: var(--primary-white-color);
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.portfolio .button:focus {
-  color: var(--primary-white-color);
-  background: var(--accent-color);
-  border: 2px solid var(--primary-text-color);
 }
 
 .hero .button:hover {
